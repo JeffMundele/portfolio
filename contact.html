@@ -1,117 +1,153 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Jeff Mundele">
 
-<title>Contact - Jeff Mundele</title>
-<link rel="stylesheet" href="css/style.css">
+    <title>Contact - Jeff Mundele, développeur web à Kinshasa</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-<link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-<link rel="icon" href="images/favicon.png">
-<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-</head>
+    <meta name="description" content="Contactez Jeff Mundele pour votre projet de site web ou d'application à Kinshasa : devis gratuit, réponse sous 24h.">
+    <meta property="og:title" content="Contact - Jeff Mundele, développeur web à Kinshasa">
+    <meta property="og:description" content="Une idée de site web ou une question sur mes tarifs ? Discutons de votre projet, réponse sous 24h.">
+    <meta property="og:image" content="images/profil.jpg">
 
-<body>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/component.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="icon" href="images/favicon.png">
+    
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  
+  </head>
+  
+  <body>
+    
+    <div id="header-container"></div>
+    <section class="hero">
+      <h1>Contactez-moi</h1>
+      <p>Discutons de votre projet</p>
+    </section>
+    
+    <section id="contact" class="contact">
+      <h2 class="section-title">Parlons de votre projet</h2>
 
-<header>
-<div class="logo">
-  <img src="images/profil.jpg" alt="Jeff Mundele">
-  <span>Jeff Mundele</span>
-</div>
+      <div class="contact-layout">
 
-<div class="menu-toggle" id="menu-toggle">
-<span></span>
-<span></span>
-<span></span>
-</div>
+        <div class="contact-info" data-aos="fade-right">
+          <p>
+            Une idée de site web, une question sur mes tarifs, ou juste envie d’échanger sur votre projet ?
+            Je réponds généralement en moins de 24h.
+          </p>
 
-<nav id="nav-menu">
-<a href="index.html">Accueil</a>
-<a href="about.html">À propos</a>
-<a href="services.html">Services</a>
-<a href="index.html#skills">Compétences</a>
-<a href="projets.html">Projets</a>
-<a href="contact.html">Contact</a>
-</nav>
-<button id="theme-toggle" class="theme-toggle">
-  <i class="fas fa-moon"></i>
-</button>
-</header>
+          <div class="contact-info-list">
+            <a href="mailto:contact@jeffmundele.com" class="contact-info-item">
+              <i class="fa-solid fa-envelope"></i>
+              <div>
+                <span class="contact-info-label">Email</span>
+                <span>jeffmundele2024@gmail.com</span>
+              </div>
+            </a>
 
-<section class="hero">
-<h1>Contactez-moi</h1>
-<p>Discutons de votre projet</p>
-</section>
+            <a href="https://wa.me/243976228153" target="_blank" class="contact-info-item">
+              <i class="fa-brands fa-whatsapp"></i>
+              <div>
+                <span class="contact-info-label">WhatsApp</span>
+                <span>+243 976 228 153</span>
+              </div>
+            </a>
 
-<section id="contact" class="contact">
-<h2 class="section-title">Contact</h2>
-<form>
-<input type="text" id="name" name="name" placeholder="Votre nom" required>
-<small class="error-message"></small>
+            <div class="contact-info-item">
+              <i class="fa-solid fa-location-dot"></i>
+              <div>
+                <span class="contact-info-label">Localisation</span>
+                <span>Kinshasa, RDC — disponible à distance</span>
+              </div>
+            </div>
+          </div>
 
-<input type="email" id="email" name="email" placeholder="Votre email" required>
-<small class="error-message"></small>
+          <span class="availability-badge">
+            <span class="pulse-dot"></span> Disponible pour nouvelles missions
+          </span>
 
-<textarea id="message" name="message" rows="5" placeholder="Votre message" required></textarea>
-<small class="error-message"></small>
+          <div class="social-links">
+            <a href="https://www.facebook.com/jeff.mundele.2025" target="_blank" aria-label="Facebook">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="https://www.instagram.com/jeffmundele" target="_blank" aria-label="Instagram">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/jeff-mundele" target="_blank" aria-label="LinkedIn">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="https://github.com/JeffMundele" target="_blank" aria-label="GitHub">
+              <i class="fab fa-github"></i>
+            </a>
+          </div>
+        </div>
 
-<button class="btn" id="submit-btn">
-  <span class="btn-text">Envoyer</span>
-  <span class="loader hidden"></span>
-</button>
-</form>
-<div id="toast" class="toast">
-  <span id="toast-message">Message</span>
-</div>
+        <form data-aos="fade-left">
+          <input type="text" id="name" name="name" placeholder="Votre nom" required>
+          <small class="error-message"></small>
+          
+          <input type="email" id="email" name="email" placeholder="Votre email" required>
+          <small class="error-message"></small>
+          
+          <textarea id="message" name="message" rows="5" placeholder="Votre message" required></textarea>
+          <small class="error-message"></small>
+          
+          <button class="btn" id="submit-btn">
+            <span class="btn-text">Envoyer</span>
+            <span class="loader hidden"></span>
+          </button>
 
-<p style="text-align:center;">
-Réponse en moins de 24h ⚡
-</p>
-</section>
+          <p style="text-align:center;">
+            Réponse en moins de 24h ⚡
+          </p>
+        </form>
 
-<footer>
+      </div>
+      
+      <div id="toast" class="toast">
+        <span id="toast-message">Message</span>
+      </div>
+    
+    </section>
 
-<div class="social-links">
+    <section class="faq-section">
+      <h2 class="section-title" data-aos="fade-up">Questions fréquentes</h2>
 
-<a href="https://www.facebook.com/jeff.mundele.2025" target="_blank" aria-label="Facebook">
-<i class="fab fa-facebook-f"></i>
-</a>
+      <div class="faq-list">
+        <details class="faq-item" data-aos="fade-up">
+          <summary>Combien coûte un site web à Kinshasa ?</summary>
+          <p>Le prix dépend de vos besoins : un site vitrine démarre à partir de 500$, un portfolio à partir de 300$ et une application web sur mesure à partir de 1000$. Je vous propose un devis gratuit après avoir échangé sur votre projet.</p>
+        </details>
 
-<a href="https://www.instagram.com/jeffmundele" target="_blank" aria-label="Instagram">
-<i class="fab fa-instagram"></i>
-</a>
+        <details class="faq-item" data-aos="fade-up">
+          <summary>Combien de temps prend un projet ?</summary>
+          <p>Un site vitrine simple est généralement livré en 1 à 2 semaines. Une application web sur mesure peut prendre 3 à 6 semaines selon sa complexité. Un planning précis vous est communiqué dès le démarrage.</p>
+        </details>
 
-<a href="https://www.linkedin.com/in/jeff-mundele" target="_blank" aria-label="LinkedIn">
-<i class="fab fa-linkedin-in"></i>
-</a>
-
-<a href="https://x.com/JeffMundeleM" target="_blank" aria-label="X">
-<i class="fab fa-x-twitter"></i>
-</a>
-
-<a href="https://github.com/JeffMundele" target="_blank" aria-label="GitHub">
-<i class="fab fa-github"></i>
-</a>
-
-<a href="https://wa.me/243976228153" target="_blank" aria-label="WhatsApp">
-<i class="fab fa-whatsapp"></i>
-</a>
-
-</div>
-
-<p>Disponible pour missions freelance | Kinshasa & à distance</p>
-<p>© 2026 Jeff Mundele. Tous droits réservés</p>
-</footer>
-
-<a href="https://wa.me/243976228153?text=Bonjour%20Jeff,%20je%20suis%20intéressé%20par%20la%20création%20d’un%20site%20web" target="_blank" class="whatsapp-float">
-<i class="fab fa-whatsapp"></i>
-</a>
-
-<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
-<script src="js/script.js"></script>
-
-</body>
-</html>
+        <details class="faq-item" data-aos="fade-up">
+          <summary>Faites-vous le référencement SEO ?</summary>
+          <p>Oui, chaque site que je développe est optimisé pour le SEO dès sa conception : structure sémantique, vitesse de chargement, balises méta et bonnes pratiques Google, pour améliorer votre visibilité en ligne.</p>
+        </details>
+      </div>
+    </section>
+    
+    <div id="footer-container"></div>
+    <a href="https://wa.me/243976228153?text=Bonjour%20Jeff,%20je%20suis%20intéressé%20par%20la%20création%20d’un%20site%20web" target="_blank" class="whatsapp-float">
+      <i class="fab fa-whatsapp"></i>
+    </a>
+    
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script type="module" src="js/app.js"></script>
+  
+  </body>
+  
+  </html>

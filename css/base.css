@@ -1,0 +1,92 @@
+/* ============================================================
+   BASE — reset, variables de design (thème) & réglages globaux
+   ============================================================ */
+
+/* ---------- Reset ---------- */
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Poppins',sans-serif;
+}
+
+html{
+  scroll-padding-top:100px;
+  scroll-behavior:smooth;
+}
+
+/* ---------- Design tokens — thème sombre (par défaut) ---------- */
+:root{
+  /* Couleurs principales */
+  --color-primary:#38bdf8;
+  --color-primary-rgb:56,189,248;
+  --color-bg:#0f172a;
+  --color-bg-strong:#020617;
+  --color-bg-strong-soft:rgba(2,6,23,0.9);
+  --color-surface:#1e293b;
+  --color-surface-hover:#334155;
+
+  /* Texte */
+  --color-text:#ffffff;
+  --color-text-secondary:#cbd5f5;
+  --color-text-muted:#94a3b8;
+  --color-footer-text:var(--color-text-secondary);
+
+  /* Boutons */
+  --color-btn-text:#020617;
+  --color-btn-outline-text:var(--color-primary);
+
+  /* États */
+  --color-error:#ef4444;
+  --color-success:#22c55e;
+  --color-star:#facc15;
+
+  /* Formulaire */
+  --color-input-border:#ccc;
+
+  /* Divers */
+  --color-footer-bg:#020617;
+  --color-whatsapp:#25D366;
+  --color-whatsapp-tooltip:#0A1F44;
+
+  /* Ombres */
+  --shadow-btn:0 5px 15px rgba(var(--color-primary-rgb),0.3);
+  --shadow-focus:0 0 0 3px rgba(var(--color-primary-rgb),0.2);
+  --shadow-card:0 10px 25px rgba(0,0,0,0.2);
+  --shadow-card-hover:0 15px 35px rgba(0,0,0,0.4);
+  --shadow-header:0 5px 20px rgba(0,0,0,0.3);
+  --shadow-toast:0 10px 25px rgba(0,0,0,0.3);
+  --shadow-float:0 6px 15px rgba(0,0,0,0.3);
+
+  /* Rayons & transitions */
+  --radius-sm:6px;
+  --radius-md:8px;
+  --radius-lg:12px;
+  --radius-xl:15px;
+  --transition:0.3s;
+}
+
+/* ---------- Design tokens — thème clair (classe body.light) ---------- */
+body.light{
+  --color-bg:#f8fafc;
+  --color-bg-strong:#ffffff;
+  --color-bg-strong-soft:#ffffff;
+  --color-surface:#ffffff;
+
+  --color-text:#020617;
+  --color-text-secondary:#334155;
+  --color-text-muted:#64748b;
+  --color-footer-text:#020617;
+
+  --color-btn-text:#ffffff;
+  --color-btn-outline-text:var(--color-text);
+
+  --color-input-border:#cbd5e1;
+  --color-footer-bg:#e2e8f0;
+}
+
+/* ---------- Document ---------- */
+body{
+  background:var(--color-bg);
+  color:var(--color-text);
+}

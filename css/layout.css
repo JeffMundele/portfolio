@@ -1,0 +1,233 @@
+/* ============================================================
+   LAYOUT — structure des pages, grilles & positionnement
+   (aucune couleur/valeur visuelle ici : voir component.css)
+   ============================================================ */
+
+/* ---------- Header ---------- */
+header{
+  position:fixed;
+  width:100%;
+  top:0;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:20px 8%;
+  z-index:1000;
+  transition:var(--transition);
+}
+
+.logo{
+  display:flex;
+  align-items:center;
+  gap:10px;
+}
+
+.menu-toggle{
+  display:none;
+  flex-direction:column;
+  cursor:pointer;
+  gap:6px;
+}
+
+nav a{
+  margin-left:25px;
+}
+
+/* ---------- Hero ---------- */
+.hero{
+  min-height:100vh;
+  padding:140px 10% 80px;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+}
+
+.hero-buttons{
+  display:flex;
+  gap:15px;
+  justify-content:center;
+  flex-wrap:wrap;
+  margin-top:30px;
+}
+
+.about-hero{
+  min-height:60vh;
+}
+
+/* ---------- Sections génériques ---------- */
+section{
+  padding:60px 8% 50px;
+  scroll-margin-top:80px;
+}
+
+.section-title{
+  text-align:center;
+  margin-bottom:30px;
+}
+
+/* ---------- À propos (bloc index.html) ---------- */
+.about{
+  display:grid;
+  grid-template-columns:1fr 2fr;
+  gap:50px;
+  align-items:stretch;
+  text-align:justify;
+}
+
+/* ---------- À propos (page about.html) ---------- */
+.about-container{
+  padding-top:40px;
+}
+
+.about-grid{
+  display:grid;
+  grid-template-columns:1fr 2fr;
+  gap:50px;
+  align-items:center;
+}
+
+.about-values{
+  text-align:center;
+}
+
+.about-cta{
+  margin-top:40px;
+}
+
+/* ---------- Grilles de cartes ---------- */
+.services{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:25px;
+}
+
+.skills-container{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:30px;
+}
+
+.projects{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+  gap:25px;
+}
+
+.testimonials{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+  gap:25px;
+}
+
+/* ---------- Contact ---------- */
+.contact form{
+  max-width:500px;
+  margin:auto;
+  display:flex;
+  flex-direction:column;
+  gap:15px;
+}
+
+/* Mise en page à deux colonnes de la page contact.html */
+.contact-layout{
+  display:grid;
+  grid-template-columns:1fr 1.2fr;
+  gap:60px;
+  align-items:start;
+  max-width:1100px;
+  margin:0 auto;
+  text-align:left;
+}
+
+.contact-info{
+  display:flex;
+  flex-direction:column;
+  gap:25px;
+}
+
+.contact-info-list{
+  display:flex;
+  flex-direction:column;
+  gap:15px;
+}
+
+.contact-info-item{
+  display:flex;
+  align-items:center;
+  gap:15px;
+}
+
+/* ---------- À propos : bandeau de statistiques ---------- */
+.about-stats{
+  display:flex;
+  justify-content:center;
+  gap:20px;
+  flex-wrap:wrap;
+  margin-top:35px;
+}
+
+/* ---------- À propos : timeline de la méthode de travail ---------- */
+.method-timeline{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+  gap:30px;
+  position:relative;
+  margin-top:40px;
+}
+
+/* ---------- FAQ (contact.html) ---------- */
+.faq-list{
+  max-width:750px;
+  margin:0 auto;
+  display:flex;
+  flex-direction:column;
+  gap:15px;
+}
+
+/* ---------- Réseaux sociaux ---------- */
+.social-links{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  gap:18px;
+  margin:25px 0;
+  flex-wrap:wrap;
+}
+
+.social-links a{
+  width:50px;
+  height:50px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  border-radius:50%;
+  position:relative;
+}
+
+/* ---------- Footer ---------- */
+footer{
+  text-align:center;
+  padding:25px;
+  margin-top:50px;
+}
+
+/* ---------- Bouton flottant WhatsApp ---------- */
+.whatsapp-float{
+  position:fixed;
+  bottom:25px;
+  right:25px;
+  width:60px;
+  height:60px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  border-radius:50%;
+  z-index:1000;
+}
+
+/* ---------- CTA final ---------- */
+.cta-section{
+  text-align:center;
+}
