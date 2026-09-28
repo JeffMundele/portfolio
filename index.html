@@ -1,40 +1,104 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
-  <!-- Google tag (gtag.js) -->
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta name="author" content="Jeff Mundele">
+   <meta name="robots" content="index, follow">
+
+   <title>Création de site web à Kinshasa | Développeur web RDC - Jeff Mundele</title>
+
+   <meta name="description" content="Développeur web full-stack à Kinshasa. Création de sites modernes, rapides et optimisés SEO pour attirer plus de clients.">
+   <link rel="canonical" href="https://jeffmundele.github.io/portfolio/">
+
+   <!-- Open Graph -->
+   <meta property="og:type" content="website">
+   <meta property="og:site_name" content="Jeff Mundele — Développeur web Kinshasa">
+   <meta property="og:locale" content="fr_FR">
+   <meta property="og:url" content="https://jeffmundele.github.io/portfolio/">
+   <meta property="og:title" content="Développeur web à Kinshasa - Jeff Mundele">
+   <meta property="og:description" content="Création de sites modernes, rapides et optimisés SEO pour attirer plus de clients.">
+   <meta property="og:image" content="https://jeffmundele.github.io/portfolio/images/profil.jpg">
+
+   <!-- Twitter Card -->
+   <meta name="twitter:card" content="summary_large_image">
+   <meta name="twitter:title" content="Développeur web à Kinshasa - Jeff Mundele">
+   <meta name="twitter:description" content="Création de sites modernes, rapides et optimisés SEO pour attirer plus de clients.">
+   <meta name="twitter:image" content="https://jeffmundele.github.io/portfolio/images/profil.jpg">
+
+   <!-- SEO local -->
+   <meta name="geo.region" content="CD-KN">
+   <meta name="geo.placename" content="Kinshasa">
+   <meta name="geo.position" content="-4.4419;15.2663">
+   <meta name="ICBM" content="-4.4419, 15.2663">
+
+   <link rel="stylesheet" href="css/base.css">
+   <link rel="stylesheet" href="css/layout.css">
+   <link rel="stylesheet" href="css/component.css">
+   <link rel="stylesheet" href="css/responsive.css">
+
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+   <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+   <link rel="icon" href="images/favicon.png">
+   <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+   <!-- Google tag (gtag.js) -->
    <script async src="https://www.googletagmanager.com/gtag/js?id=G-5XMLQG3PP8"></script>
-   
    <script>
    window.dataLayer = window.dataLayer || [];
    function gtag(){dataLayer.push(arguments);}
    gtag('js', new Date());
    gtag('config', 'G-5XMLQG3PP8');
    </script>
-   
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <meta name="author" content="Jeff Mundele">
-   <meta property="og:title" content="Développeur web à Kinshasa - Jeff Mundele"><meta property="og:description" content="Création de sites modernes, rapides et optimisés SEO">
-   <meta name="geo.region" content="CD-KN">
-   <meta name="geo.placename" content="Kinshasa">
-   <meta name="geo.position" content="-4.4419;15.2663">
-   <meta name="ICBM" content="-4.4419, 15.2663">
-   
-   <title>Création de site web à Kinshasa | Développeur web RDC - Jeff Mundele</title>
-   
-   <meta name="description" content="Développeur web full-stack à Kinshasa. Création de sites modernes, rapides et optimisés SEO pour attirer plus de clients.">
-   
-   <link rel="stylesheet" href="css/base.css">
-   <link rel="stylesheet" href="css/layout.css">
-   <link rel="stylesheet" href="css/component.css">
-   <link rel="stylesheet" href="css/responsive.css">
-   
-   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-   <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-   <link rel="icon" href="images/favicon.png">
-   <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-  
+
+   <!-- Données structurées : identité professionnelle + zone d'intervention -->
+   <script type="application/ld+json">
+   {
+     "@context": "https://schema.org",
+     "@type": "ProfessionalService",
+     "name": "Jeff Mundele — Développeur web",
+     "image": "https://jeffmundele.github.io/portfolio/images/profil.jpg",
+     "url": "https://jeffmundele.github.io/portfolio/",
+     "telephone": "+243976228153",
+     "priceRange": "$$",
+     "address": {
+       "@type": "PostalAddress",
+       "addressLocality": "Kinshasa",
+       "addressCountry": "CD"
+     },
+     "geo": {
+       "@type": "GeoCoordinates",
+       "latitude": -4.4419,
+       "longitude": 15.2663
+     },
+     "areaServed": {
+       "@type": "Place",
+       "name": "Kinshasa, République Démocratique du Congo"
+     },
+     "founder": {
+       "@type": "Person",
+       "name": "Jeff Mundele",
+       "jobTitle": "Développeur web Full-stack",
+       "url": "https://jeffmundele.github.io/portfolio/about.html",
+       "sameAs": [
+         "https://www.facebook.com/jeff.mundele.2025",
+         "https://www.instagram.com/jeffmundele",
+         "https://www.linkedin.com/in/jeff-mundele",
+         "https://github.com/JeffMundele",
+         "https://x.com/JeffMundeleM"
+       ]
+     },
+     "sameAs": [
+       "https://www.facebook.com/jeff.mundele.2025",
+       "https://www.instagram.com/jeffmundele",
+       "https://www.linkedin.com/in/jeff-mundele",
+       "https://github.com/JeffMundele"
+     ]
+   }
+   </script>
+
   </head>
   
   <body>
@@ -196,7 +260,7 @@
     
     <div id="footer-container"></div>
     
-    <a href="https://wa.me/243976228153?text=Bonjour%20Jeff,%20je%20suis%20intéressé%20par%20la%20création%20d’un%20site%20web" target="_blank" class="whatsapp-float">
+    <a href="https://wa.me/243976228153?text=Bonjour%20Jeff,%20je%20suis%20intéressé%20par%20la%20création%20d’un%20site%20web" target="_blank" rel="noopener noreferrer" class="whatsapp-float">
       <i class="fab fa-whatsapp"></i>
     </a>
     
