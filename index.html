@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
+  <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <meta name="author" content="Jeff Mundele">
@@ -12,7 +13,7 @@
 
    <!-- Open Graph -->
    <meta property="og:type" content="website">
-   <meta property="og:site_name" content="Jeff Mundele — Développeur web Kinshasa">
+   <meta property="og:site_name" content="Jeff Mundele">
    <meta property="og:locale" content="fr_FR">
    <meta property="og:url" content="https://jeffmundele.github.io/portfolio/">
    <meta property="og:title" content="Développeur web à Kinshasa - Jeff Mundele">
@@ -43,8 +44,7 @@
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
    <link rel="icon" href="images/favicon.png">
    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-   
-   
+
    <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-KRVY5Q1YLH"></script>
     <script>
@@ -55,48 +55,63 @@
     gtag('config', 'G-KRVY5Q1YLH');
     </script>
 
-   <!-- Données structurées : identité professionnelle + zone d'intervention -->
+   <!-- Données structurées : nom du site (signal prioritaire pour Google),
+        identité de la personne, et identité professionnelle -->
    <script type="application/ld+json">
    {
      "@context": "https://schema.org",
-     "@type": "ProfessionalService",
-     "name": "Jeff Mundele — Développeur web",
-     "image": "https://jeffmundele.github.io/portfolio/images/profil.jpg",
-     "url": "https://jeffmundele.github.io/portfolio/",
-     "telephone": "+243976228153",
-     "priceRange": "$$",
-     "address": {
-       "@type": "PostalAddress",
-       "addressLocality": "Kinshasa",
-       "addressCountry": "CD"
-     },
-     "geo": {
-       "@type": "GeoCoordinates",
-       "latitude": -4.4419,
-       "longitude": 15.2663
-     },
-     "areaServed": {
-       "@type": "Place",
-       "name": "Kinshasa, République Démocratique du Congo"
-     },
-     "founder": {
-       "@type": "Person",
-       "name": "Jeff Mundele",
-       "jobTitle": "Développeur web Full-stack",
-       "url": "https://jeffmundele.github.io/portfolio/about.html",
-       "sameAs": [
-         "https://www.facebook.com/jeff.mundele.2025",
-         "https://www.instagram.com/jeffmundele",
-         "https://www.linkedin.com/in/jeff-mundele",
-         "https://github.com/JeffMundele",
-         "https://x.com/JeffMundeleM"
-       ]
-     },
-     "sameAs": [
-       "https://www.facebook.com/jeff.mundele.2025",
-       "https://www.instagram.com/jeffmundele",
-       "https://www.linkedin.com/in/jeff-mundele",
-       "https://github.com/JeffMundele"
+     "@graph": [
+       {
+         "@type": "WebSite",
+         "@id": "https://jeffmundele.github.io/portfolio/#website",
+         "name": "Jeff Mundele",
+         "alternateName": "Jeff Mundele - Développeur web à Kinshasa",
+         "url": "https://jeffmundele.github.io/portfolio/"
+       },
+       {
+         "@type": "Person",
+         "@id": "https://jeffmundele.github.io/portfolio/#person",
+         "name": "Jeff Mundele",
+         "jobTitle": "Développeur web Full-stack",
+         "image": "https://jeffmundele.github.io/portfolio/images/profil.jpg",
+         "url": "https://jeffmundele.github.io/portfolio/about.html",
+         "sameAs": [
+           "https://www.facebook.com/jeff.mundele.2025",
+           "https://www.instagram.com/jeffmundele",
+           "https://www.linkedin.com/in/jeff-mundele",
+           "https://github.com/JeffMundele",
+           "https://x.com/JeffMundeleM"
+         ]
+       },
+       {
+         "@type": "ProfessionalService",
+         "name": "Jeff Mundele — Développeur web",
+         "image": "https://jeffmundele.github.io/portfolio/images/profil.jpg",
+         "url": "https://jeffmundele.github.io/portfolio/",
+         "telephone": "+243976228153",
+         "priceRange": "$$",
+         "address": {
+           "@type": "PostalAddress",
+           "addressLocality": "Kinshasa",
+           "addressCountry": "CD"
+         },
+         "geo": {
+           "@type": "GeoCoordinates",
+           "latitude": -4.4419,
+           "longitude": 15.2663
+         },
+         "areaServed": {
+           "@type": "Place",
+           "name": "Kinshasa, République Démocratique du Congo"
+         },
+         "founder": { "@id": "https://jeffmundele.github.io/portfolio/#person" },
+         "sameAs": [
+           "https://www.facebook.com/jeff.mundele.2025",
+           "https://www.instagram.com/jeffmundele",
+           "https://www.linkedin.com/in/jeff-mundele",
+           "https://github.com/JeffMundele"
+         ]
+       }
      ]
    }
    </script>
@@ -108,7 +123,7 @@
     <div id="header-container"></div>
     <section class="hero">
       <h1>
-        J’aide les entreprises à obtenir <span>plus de clients grâce à des sites web rapides et optimisés</span>
+        J’aide les entreprises à obtenir <span>plus de clients à Kinshasa grâce à des sites web rapides et optimisés</span>
       </h1>
       
       <p class="hero-subtitle">

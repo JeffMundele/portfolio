@@ -13,7 +13,7 @@
 
     <!-- Open Graph -->
     <meta property="og:type" content="profile">
-    <meta property="og:site_name" content="Jeff Mundele — Développeur web Kinshasa">
+    <meta property="og:site_name" content="Jeff Mundele">
     <meta property="og:locale" content="fr_FR">
     <meta property="og:url" content="https://jeffmundele.github.io/portfolio/about.html">
     <meta property="og:title" content="À propos - Jeff Mundele, développeur web à Kinshasa">
@@ -40,14 +40,37 @@
     
     <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 
-    <!-- Fil d'Ariane structuré -->
+    <!-- Fil d'Ariane structuré + identité de la personne (photo, poste, réseaux) -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "BreadcrumbList",
-      "itemListElement": [
-        { "@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://jeffmundele.github.io/portfolio/" },
-        { "@type": "ListItem", "position": 2, "name": "À propos", "item": "https://jeffmundele.github.io/portfolio/about.html" }
+      "@graph": [
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            { "@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://jeffmundele.github.io/portfolio/" },
+            { "@type": "ListItem", "position": 2, "name": "À propos", "item": "https://jeffmundele.github.io/portfolio/about.html" }
+          ]
+        },
+        {
+          "@type": "Person",
+          "@id": "https://jeffmundele.github.io/portfolio/#person",
+          "name": "Jeff Mundele",
+          "jobTitle": "Développeur web Full-stack",
+          "image": "https://jeffmundele.github.io/portfolio/images/profil.jpg",
+          "url": "https://jeffmundele.github.io/portfolio/about.html",
+          "worksLocation": {
+            "@type": "Place",
+            "name": "Kinshasa, République Démocratique du Congo"
+          },
+          "sameAs": [
+            "https://www.facebook.com/jeff.mundele.2025",
+            "https://www.instagram.com/jeffmundele",
+            "https://www.linkedin.com/in/jeff-mundele",
+            "https://github.com/JeffMundele",
+            "https://x.com/JeffMundeleM"
+          ]
+        }
       ]
     }
     </script>
